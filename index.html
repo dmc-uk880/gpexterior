@@ -55,7 +55,34 @@
 
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:Garry@gpexterior.com">Garry@gpexterior.com</a></p>
+<form action="https://api.web3forms.com/submit" method="POST">
+  <!-- Access Key -->
+  <input type="hidden" name="access_key" value="5c9d4e2c-b7e7-416d-8f70-69bf6f3b5a41">
+
+  <!-- Contact Form Fields -->
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" required>
+  </div>
+  <div>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+  </div>
+
+  <!-- Honeypot Field for Spam Prevention -->
+  <input type="checkbox" name="botcheck" style="display: none;">
+
+  <!-- Submit Button -->
+  <button type="submit">Send Message</button>
+</form>
     <p>Phone: 07939 862286</p>
     <div class="socials">
       <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" /></a>
